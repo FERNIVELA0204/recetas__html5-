@@ -1,7 +1,6 @@
-// Animación al hacer scroll
 const elementos = document.querySelectorAll(".fade");
 
-window.addEventListener("scroll", () => {
+function mostrarElementos() {
     elementos.forEach(el => {
         const pos = el.getBoundingClientRect().top;
         const pantalla = window.innerHeight;
@@ -10,9 +9,15 @@ window.addEventListener("scroll", () => {
             el.classList.add("visible");
         }
     });
-});
+}
 
-// Botón interactivo
+// Ejecutar al cargar
+window.addEventListener("load", mostrarElementos);
+
+// Ejecutar al hacer scroll
+window.addEventListener("scroll", mostrarElementos);
+
+// Botón
 function mensaje() {
     alert("¡Gracias por visitar mi página de recetas! 👩‍🍳");
 }
