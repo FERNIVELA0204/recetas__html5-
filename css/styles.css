@@ -19,6 +19,7 @@ nav {
     background: #222;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -160,12 +161,6 @@ footer {
     button {
         width: 80%;
         max-width: 250px;
-    }
-}
-
-@media (max-width: 768px) {
-    nav {
-        position: relative;
     }
 }
 
