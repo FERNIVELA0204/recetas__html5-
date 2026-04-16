@@ -176,3 +176,8 @@ body {
 section {
     scroll-margin-top: 100px;
 }
+
+section {
+    min-height: 100vh;
+    scroll-margin-top: 100px;
+}
